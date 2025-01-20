@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0c0c;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.outer-container {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.exercise-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    text-align: center;
+}
+
+.code-box {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    margin: 15px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+    border-left: 3px solid #666;
+}
+
+.highlight {
+    background-color: #555;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #444;
+    color: #ddd;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.submit {
+    background-color: #28a745;
+    padding: 10px 20px;
+    font-weight: bold;
+}
