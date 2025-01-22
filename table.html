@@ -8,50 +8,64 @@
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
+      background-color: #f8f8f8;
     }
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
     }
-    .castle-info {
-      flex: 1;
-      min-width: 300px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
-      margin-top: 10px;
+    td {
+      vertical-align: top;
+      padding: 10px;
     }
     img {
       max-width: 100%;
       height: auto;
-      display: block;
-      border-radius: 5px;
+    }
+    h2 {
+      margin: 0;
+    }
+    .subtext {
+      font-style: italic;
+    }
+    .gallery table {
+      width: 100%;
+    }
+    .gallery td {
+      width: 50%;
+      padding: 5px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="castle-image">
-      <img src="image1.jpg" alt="Lewes Castle in the UK" loading="lazy">
-    </div>
-    <div class="castle-info">
-      <h2>Lewes Castle</h2>
-      <p>Lewes, UK</p>
-      <p><i>Photo by Michele Brooks</i></p>
-      <p>Built in 1069, the castle has a tremendous view of the town of Lewes and the surrounding countryside.</p>
-      <h3>Other Images by Michele Brooks</h3>
-      <div class="gallery">
-        <img src="image2.jpg" alt="Another view of Lewes Castle" loading="lazy">
-        <img src="image3.jpg" alt="Historic architecture of Lewes Castle" loading="lazy">
-        <img src="image4.jpg" alt="Castle grounds and gardens" loading="lazy">
-        <img src="image 5.jpg" alt="A scenic view from Lewes Castle" loading="lazy">
-      </div>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <td style="width: 40%;">
+        <img src="image1.jpg" alt="Castle">
+      </td>
+      <td style="width: 60%;">
+        <h2>Castle</h2>
+        <p>Lewes, UK</p>
+        <p><strong>Photo by Michele Brooks</strong></p>
+        <p class="subtext">Built in 1069, the castle has a tremendous view of the town of Lewes and the surrounding countryside.</p>
+        <h3>Other Images by Michele Brooks</h3>
+        <table class="gallery">
+          <tr>
+            <td><img src="image2.jpg" alt="Image 1"></td>
+            <td><img src="image3.jpg" alt="Image 2"></td>
+          </tr>
+          <tr>
+            <td><img src="image4.jpg" alt="Image 3"></td>
+            <td><img src="image 5.jpg" alt="Image 4"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>
