@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .castle-info {
+      flex: 1;
+      min-width: 300px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="castle-image">
+      <img src="image1.jpg" alt="Lewes Castle in the UK" loading="lazy">
+    </div>
+    <div class="castle-info">
+      <h2>Lewes Castle</h2>
+      <p>Lewes, UK</p>
+      <p><i>Photo by Michele Brooks</i></p>
+      <p>Built in 1069, the castle has a tremendous view of the town of Lewes and the surrounding countryside.</p>
+      <h3>Other Images by Michele Brooks</h3>
+      <div class="gallery">
+        <img src="image2.jpg" alt="Another view of Lewes Castle" loading="lazy">
+        <img src="image3.jpg" alt="Historic architecture of Lewes Castle" loading="lazy">
+        <img src="image4.jpg" alt="Castle grounds and gardens" loading="lazy">
+        <img src="image5.jpg" alt="A scenic view from Lewes Castle" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
