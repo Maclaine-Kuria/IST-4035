@@ -3,14 +3,31 @@
     <title>Premier League Table</title>
     <link rel="icon" href="league\logo.png">
     <style>
+         <link rel="icon" href="league\logo.png">
+    <style>
          body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
             background-color: #121212;
             color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #1d1b1b;
+        }
+        .header img {
+            width: 50px;
+            margin-right: 10px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 10px;
         }
         th, td {
             border: 1px solid #ddd;
@@ -18,7 +35,8 @@
             text-align: center;
         }
         th {
-            background-color: #1f1f1f; color: white;
+            background-color: #1f1f1f; 
+            color: white;
         }
         .team {
             text-align: left;
@@ -46,19 +64,23 @@
         .W { background-color: green; }
         .D { background-color: gray; }
         .L { background-color: red; }
-      
-      .side-bar {
+        .side-bar {
             position: absolute;
             left: 0;
             top: 0;
             width: 5px;
-            height: calc(6 * 40px);
-            background: linear-gradient(to bottom, blue 33%, orange 33%, orange 66%, green 66%);
+            height: calc(9 * 49.3px); /* Stops at row 6 assuming each row is 40px tall */
+            background: linear-gradient(to bottom, black 20%, blue 47%, orange 10%, green 10%);
         }
     </style>
-    
-  </head>
-   <div class="side-bar"></div>
+</head>
+<body>
+    <div class="header">
+        <img src="league/logo.png" alt="Premier League Logo">
+        <h1>Premier League</h1>
+    </div>
+    <table>
+        <div class="side-bar"></div>
   <body>
     <table>
         <tr>
